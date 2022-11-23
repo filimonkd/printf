@@ -48,3 +48,4 @@ int print_char(va_list valist);
 int print_string(va_list valist);
 int _puts(char *str);
 int print_rev(va_list valist);
+#endif
