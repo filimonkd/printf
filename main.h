@@ -57,10 +57,10 @@ char *itoa(long int num, int base, int lowercase);
 int print_binary(va_list valist);
 
 /* print unsigned integer */
-int print_unsigned (va_list 1);
+int print_unsigned (va_list l);
 
 /* print octa decimal */
-int print_octal(va_list 1);
+int print_octal(va_list l);
 
 /*print hexadecimal in lowercase*/
 int print_hex(va_list l);
