@@ -46,20 +46,21 @@ int _printf(const char *format, ...);
 /*print a character and string*/
 int print_char(va_list valist);
 int print_string(va_list valist);
+int print_rot13(va_list valist);
 int _puts(char *str);
 int print_rev(va_list valist);
 
-/*print integer */
-int  print_int(va_list valist);
+/* print integer */
+int print_int(va_list valist);
 char *itoa(long int num, int base, int lowercase);
 
-/* print base */
+/* print base*/
 int print_binary(va_list valist);
 
 /* print unsigned integer */
 int print_unsigned (va_list l);
 
-/* print octa decimal */
+/*print octa decimal */
 int print_octal(va_list l);
 
 /*print hexadecimal in lowercase*/
@@ -68,4 +69,12 @@ int print_hex(va_list l);
 /*print hexadecimal in uppercase */
 int print_hex_big(va_list l);
 
+/*print non printable characters*/
+int print_bigS(va_list l);
+
+/* get_sign - turns on flags if _printf finds */
+int get_sign(char s, sign_t *f);
+
+/* print address */
+int print_address(va_list valist);
 #endif
